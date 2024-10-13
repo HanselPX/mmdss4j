@@ -42,7 +42,60 @@ a {
 a,
 a:hover {
   text-decoration: none;
-  color: #8cb4ef
+  color: #50d850
+}
+.button-container {
+  display: flex; /* Activa el modelo de caja flexible */
+  flex-direction: row; /* Alinea los botones en fila */
+  justify-content: center; /* Centra los botones horizontalmente */
+  flex-wrap: wrap; /* Permite que se envuelvan si es necesario */
+}
+
+.section-btn {
+  font-weight: bold;
+  margin: 2px; /* Espaciado reducido entre botones */
+}
+
+/* Estilo para el botón "Comprar" */
+.btn-golden {
+  background-color: #FFD700; /* Color amarillo dorado */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  font-weight: bold;
+  padding: 10px 15px; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+}
+
+.btn-golden:hover {
+  font-weight: bold;
+  background-color: #FFC300; /* Color al pasar el ratón */
+}
+
+/* Estilo para el botón "Descargar" */
+.btn-descargar {
+  background-color: #0099ff; /* Color amarillo dorado */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  font-weight: bold;
+  padding: 10px 15px; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+}
+@keyframes rainbow {
+  0% { color: red; }
+  14% { color: orange; }
+  28% { color: yellow; }
+  42% { color: green; }
+  57% { color: blue; }
+  71% { color: indigo; }
+  85% { color: violet; }
+  100% { color: red; }
+}
+
+.item-price {
+  font-size: 1.6em; /* Ajusta el tamaño del texto */
+  text-align: center; /* Centra el texto */
+  animation: rainbow 3s linear infinite; /* Aplica la animación */
+  margin-bottom: 10px; /* Espacio debajo del precio */
 }
 
 .section-title {
@@ -53,6 +106,8 @@ a:hover {
 .section-subtitle {
   line-height: 1.3
 }
+
+
 
 .normal-text {
   font-style: normal;
@@ -99,6 +154,7 @@ strong {
   align-content: center;
   align-items: start
 }
+
 
 @media (min-width:992px) {
   .media-container-row {
@@ -214,18 +270,30 @@ img {
   .menu .navbar-collapse {
     max-height: 93.5vh
   }
+  .button-container {
+    flex-direction: column; /* Cambia a vertical en pantallas pequeñas */
+    align-items: center; /* Alinea los botones al centro */
+}
 }
 
 @media (min-width:992px) {
   .menu .navbar-nav.nav-dropdown {
     display: -webkit-flex
   }
+  .button-container {
+    flex-direction: column; /* Cambia a vertical en pantallas pequeñas */
+    align-items: center; /* Alinea los botones al centro */
+}
 }
 
 @media (max-width:767px) {
   .menu .navbar-collapse {
     max-height: 80vh
   }
+  .button-container {
+    flex-direction: column; /* Cambia a vertical en pantallas pequeñas */
+    align-items: center; /* Alinea los botones al centro */
+}
 }
 
 .navbar {
@@ -279,6 +347,10 @@ img {
   .modal-dialog .carousel-inner {
     height: calc(100vh - 1rem)
   }
+  .button-container {
+    flex-direction: column; /* Cambia a vertical en pantallas pequeñas */
+    align-items: center; /* Alinea los botones al centro */
+}
 }
 
 .carousel-item {
@@ -469,6 +541,10 @@ ul {
   .display-1 {
     font-size: 4rem
   }
+  .button-container {
+    flex-direction: column; /* Cambia a vertical en pantallas pequeñas */
+    align-items: center; /* Alinea los botones al centro */
+}
 }
 
 @media (max-width:768px) {
@@ -508,20 +584,20 @@ ul {
 .btn-primary.active,
 .btn-primary:focus,
 .btn-primary:hover {
-  color: #000 !important;
-  background-color: #8cb4ef !important;
-  border-color: #4082e4 !important;
+  color: #fff !important;
+  background-color: #50d850 !important;
+  border-color: #40e456 !important;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2)
 }
 
 .text-primary {
-  color: #8cb4ef !important
+  color: #50d850 !important
 }
 
 a.text-primary.active,
 a.text-primary:focus,
 a.text-primary:hover {
-  color: #327ae3 !important
+  color: #368f58 !important
 }
 
 a[class*=text-]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-caption) {
@@ -744,11 +820,11 @@ a[class*=text-]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-capti
 }
 
 .index-page .normal-text {
-  color: #8cb4ef
+  color: #50d850
 }
 
 .index-page .section-btn {
-  color: #8cb4ef
+  color: #50d850
 }
 
 .index-page .display-1 {
@@ -791,14 +867,14 @@ body {
 }
 
 .projects-page .btn:hover {
-  background-color: #6e9fe9 !important;
-  border-color: #6e9fe9 !important
+  background-color: #50d850 !important;
+  border-color: #50d850 !important
 }
 
 .projects-page .btn-primary {
   font-weight: bold;
-  background-color: #8cb4ef !important;
-  color: #000 !important
+  background-color: #50d850 !important;
+  color: #fff !important
 }
 
 .projects-page .item-img,
@@ -855,7 +931,7 @@ body {
 }
 
 .projects-page .section-title {
-  color: #8cb4ef
+  color: #50d850
 }
 
 .projects-page .normal-text,
@@ -866,7 +942,7 @@ body {
 
 .projects-page .item-title {
   text-align: left;
-  color: #8cb4ef
+  color: #50d850
 }
 
 .projects-page .section-subtitle {
@@ -1167,7 +1243,7 @@ body {
 }
 
 .gallery-page H3 {
-  color: #8cb4ef
+  color: #50d850
 }
 
 .gallery-page H4 {
@@ -1181,7 +1257,7 @@ body {
 }
 
 .about-page a:hover {
-  color: #327ae3
+  color: #41e332
 }
 
 .about-page .counter-container ol li:before {
@@ -1194,7 +1270,7 @@ body {
   transition: all .2s;
   color: #000;
   text-shadow: none !important;
-  background: #8cb4ef;
+  background: #50d850;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1220,7 +1296,7 @@ body {
 }
 
 .about-page .section-title {
-  color: #8cb4ef;
+  color: #50d850;
   text-align: center;
   font-weight: 700;
 }
@@ -1248,11 +1324,11 @@ body {
   font-size: 3rem;
   padding-left: 1rem;
   padding-right: 3rem;
-  color: #8cb4ef
+  color: #50d850
 }
 
 .contact-page .section-title {
-  color: #8cb4ef
+  color: #50d850
 }
 
 .contact-page .card-title {
@@ -1281,7 +1357,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  color: #8cb4ef;
+  color: #50d850;
   font-size: 2rem
 }
 
@@ -1400,7 +1476,7 @@ body {
 .skills_icon,
 .skills_arrow {
   font-weight: bolder;
-  color: #8CB3EE;
+  color: #8cee9c;
 }
 
 .skills_title {
@@ -1425,7 +1501,7 @@ body {
 .skills_icon,
 .skills_arrow {
   font-weight: bolder;
-  color: #8CB3EE;
+  color: #8cee9c;
 }
 
 .skills_open .skills_list {
@@ -1451,7 +1527,7 @@ body {
 }
 
 .single_skill_icon {
-  color: #8CB3EE;
+  color: #8cee9c;
   font-size: 1.5rem;
 }
 
@@ -1473,7 +1549,24 @@ body {
   border-radius: 0.25rem;
   min-width: 1%;
   height: 100%;
-  background: #8CB3EE;
+  background: #8cee9c;
+}
+.barred {
+  position: relative;
+  float: left;
+  border-radius: 0.25rem;
+  min-width: 1%;
+  height: 100%;
+  background: #e90000;
+}
+.single_skill_iconred {
+  color: #e90000;
+  font-size: 1.5rem;
+}
+.skills_namered {
+  font-size: 1rem;
+  color: #e90000;
+  font-weight: 500;
 }
 
 .navbar-animation {
@@ -1527,12 +1620,12 @@ body {
 
 .typewriter span {
   padding: 10px;
-  border-right: solid #8cb3ee 5px; 
+  border-right: solid #50d850 5px; 
   animation: cursor 1s ease-in-out infinite;
 }
 
 @keyframes cursor {
-  from { border-color: #8cb3ee; }
+  from { border-color: #50d850; }
   to { border-color: transparent; }
 }
 
