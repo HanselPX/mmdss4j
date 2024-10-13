@@ -1687,7 +1687,7 @@ body {
   margin-left: var(1rem);
   margin-right: var(1rem);
 }
-
+ 
 @media screen and (min-width: 620px) {
   .experience_time_block {
       padding: 0 2rem;
