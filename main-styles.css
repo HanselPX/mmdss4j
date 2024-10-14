@@ -50,25 +50,20 @@ a:hover {
   justify-content: center; /* Centra los botones horizontalmente */
   flex-wrap: wrap; /* Permite que se envuelvan si es necesario */
 }
-
-.section-btn {
-  font-weight: bold;
-  margin: 2px; /* Espaciado reducido entre botones */
-}
+ 
 
 /* Estilo para el botón "Comprar" */
 .btn-golden {
-  background-color: #FFD700; /* Color amarillo dorado */
+  background-color: rgb(236, 111, 8); /* Color amarillo dorado */
   color: #fff; /* Color del texto */
-  border: none; /* Sin borde */
-  font-weight: bold;
+  border: #fff; /* Sin borde */
+ 
   padding: 10px 15px; /* Espaciado interno */
   text-align: center; /* Centra el texto */
 }
-
 .btn-golden:hover {
-  font-weight: bold;
-  background-color: #FFC300; /* Color al pasar el ratón */
+
+  background-color: #4c00ff; /* Color al pasar el ratón */
 }
 
 /* Estilo para el botón "Descargar" */
@@ -81,22 +76,38 @@ a:hover {
   text-align: center; /* Centra el texto */
 }
 @keyframes rainbow {
-  0% { color: red; }
-  14% { color: orange; }
-  28% { color: yellow; }
-  42% { color: green; }
-  57% { color: blue; }
-  71% { color: indigo; }
+  0% { color: blue; }
+  14% { color: blue; }
+  28% { color: blue; }
+  42% { color: violet; }
+  57% { color: violet; }
+  71% { color: violet; }
   85% { color: violet; }
-  100% { color: red; }
-}
-
-.item-price {
+  100% { color: violet; }
+} 
+@keyframes pago {
+  0% { color: rgb(0, 168, 247); }
+  14% { color: rgb(0, 168, 247); }
+  28% { color: rgb(217, 240, 16); }
+  42% { color: rgb(217, 240, 16); }
+  57% { color: rgb(166, 21, 185); }
+  71% { color: rgb(166, 21, 185); }
+  85% { color: violet; }
+  100% { color: violet; }
+} 
+.item-price { 
   font-size: 1.6em; /* Ajusta el tamaño del texto */
   text-align: center; /* Centra el texto */
   animation: rainbow 3s linear infinite; /* Aplica la animación */
   margin-bottom: 10px; /* Espacio debajo del precio */
 }
+.item-pago {
+  font-size: 1.6em; /* Ajusta el tamaño del texto */
+  text-align: center; /* Centra el texto */
+  animation: pago 10s linear infinite; /* Aplica la animación */
+  margin-bottom: 10px; /* Espacio debajo del precio */
+}
+
 
 .section-title {
   font-style: normal;
@@ -177,7 +188,7 @@ img {
   margin-right: -.6rem;
   font-size: 0
 }
-
+ 
 .btn {
   font-weight: 600;
   border-width: 1px;
@@ -186,6 +197,7 @@ img {
   white-space: normal;
   transition: all .2s ease-in-out;
   display: inline-flex;
+
   align-items: center;
   justify-content: center;
   word-break: break-word;
@@ -939,12 +951,16 @@ body {
   text-align: left;
   color: #fff
 }
-
+ 
 .projects-page .item-title {
-  text-align: left;
+  text-align: center;
   color: #50d850
-}
-
+} 
+.projects-page .item-sub {
+  text-align: left;
+  font-size: 19px;
+  color: #fff
+} 
 .projects-page .section-subtitle {
   color: #fff
 }
