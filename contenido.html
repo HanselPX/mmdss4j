@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-        <link rel="shortcut icon" href="assets/panda_icon.png" type="image/x-icon">
-        <meta name="description" content="Contenido">
-        <meta name="color-scheme" content="dark">
-        <meta name="keywords" content="Contenido">
-        <meta name="title" content="Contenido">
-    
-        <meta property="og:title" content="Ventas adicionales">
-        <meta property="og:description" content="Ventas adicionales">
-        <meta property="og:image" content="assets/banner.png">
-        <meta property="og:url" content="https://pandastores.es/contenido.html">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta property="og:site_name" content="Ventas adicionales">
-    
-        <title>Contenido</title>
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <link rel="stylesheet" href="dropdown.css">
-        <link rel="stylesheet" href="icons.css">
-        <link rel="preload" as="style" href="main-styles.css">
-        <link rel="stylesheet" href="main-styles.css" type="text/css">
-    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/panda_icon.png" type="image/x-icon">
+    <meta name="description" content="Contenido">
+    <meta name="color-scheme" content="dark">
+    <meta name="keywords" content="Contenido">
+    <meta name="title" content="Contenido">
+
+    <meta property="og:title" content="Ventas adicionales">
+    <meta property="og:description" content="Ventas adicionales">
+    <meta property="og:image" content="assets/banner.png">
+    <meta property="og:url" content="https://pandastores.es/contenido.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="Ventas adicionales">
+
+    <title>Contenido</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="preload" as="style" href="main-styles.css">
+    <link rel="stylesheet" href="main-styles.css" type="text/css">
 
     <style>
         body {
             background-color: #232323;
             color: white;
             font-family: Arial, sans-serif;
-            margin: 0;
+            margin: 0; 
             padding: 20px;
+            background-image: url('assets/pcw2.jpg'); /* Imagen de fondo para PC */
+            background-size: cover;
+            background-position: center;
+        } 
+   
+        @media (max-width: 768px) {
+            body { 
+                background-image: url('assets/adw.jpg'); /* Imagen de fondo para móviles */
+            }
         }
+
         .container {
-            max-width: 800px;
-            margin: auto;
+            max-width: 500px;
+            margin: 10px;
             padding: 20px;
             border-radius: 5px;
-            background-color: #3a3a3a;
-            text-align: center;
+            background-color: #3a3a3abd;
         }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
         #channel-info {
             margin-bottom: 20px;
         }
+
         #channel-icon {
             width: 50px;
             height: 50px;
             border-radius: 50%;
             margin-right: 10px;
         }
+
         .video-container {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
@@ -57,6 +74,7 @@
             overflow: hidden;
             margin-bottom: 20px;
         }
+
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -64,6 +82,23 @@
             width: 100%;
             height: 100%;
         }
+
+        .item-img {
+            position: relative;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .item-img img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 87.25%; 
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
         @media (max-width: 600px) {
             body {
                 padding: 10px;
@@ -76,15 +111,12 @@
 </head>
 <body>
     <section class="menu navigation-bar">
-
-
         <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
             <div class="container-fluid">
                 <div class="navbar-icon">
                     <a href="index.html" class="navbar-logo">
                         <img src="assets/panda_icon.png" alt="Logo" style="height: 3rem;">
                     </a>
-
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -99,8 +131,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                         <li class="nav-item">
-                            <a class="nav-link link text-primary display-4" href="index.html">
-                                Inicio</a>
+                            <a class="nav-link link text-primary display-4" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link text-primary display-4" href="ventas_adicionales.html">Ventas Adicionales</a>
@@ -118,44 +149,61 @@
                             <a class="nav-link link text-primary display-4" href="contact.html">Contacto</a>
                         </li>
                     </ul>
-
-
                 </div>
             </div>
         </nav>
     </section>
+
     <div class="animate">
-        <section class="projects-page"> 
-    <div class="container"> 
-        <div id="channel-info">
-            <img id="channel-icon" src="assets/panda_icon.png" alt="Icono del canal">
-            <h4 class="d-inline">Último video publicado</h4>
-        </div>
-        
+        <section class="projects-nada">
+            <div class="section-header">
+                <h4 class="section-title align-center font-0 display-1">
+                    <strong>Contenido Tube</strong></h4>
+                <h5 class="section-subtitle align-center font-0 mt-2 display-5">
+                  Se suben cosas relacionadas con el canal de youtube<br><br></h5>
+            </div>   
+            <div class="project-container"> 
+                <div class="container"> 
+                    <div id="channel-info">
+                        <img id="channel-icon" src="assets/panda_icon.png" alt="Icono del canal">
+                        <h4 class="d-inline"><strong>Último video publicado</strong></h4>
+                    </div> 
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/7qS5_J1TniM?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <h4>Nombre: <strong>PANDA WEB</strong></h4> <!-- Aquí se muestra el título del video -->
+                    <h4>Te invito a mi canal de youtube</h4>
+                    <div class="button-container">
+                        <div class="section-btn item-footer mt-2">
+                          <a href="https://www.youtube.com/@Panda_proyects" class="item-btn btn-VER display-7" target="_blank">Ver Canal</a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/7qS5_J1TniM?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-
-        <h4>Te invito a mi canal de youtube</h4>
-        <div class="button-container">
-            <div class="section-btn item-footer mt-2">
-              <a href="https://www.youtube.com/@Panda_proyects" class="item-btn btn-VER display-7" target="_blank">
-                Ver Canal
-            </a>
-            
-        
+                <div class="container"> 
+                    <div id="channel-info">
+                        <img id="channel-icon" src="assets/panda_icon.png" alt="Icono del canal">
+                        <h4 class="d-inline"><strong>Página Web - base</strong></h4>
+                    </div>
+                    <div class="item-img1"> 
+                        <img src="assets/webyt1.jpg" alt="Take a Break Banner">
+                    </div>
+                    <h4>Aquí tienes una base de una página web lista... solo tiene lo básico</h4>
+                    <div class="button-container">
+                        <div class="section-btn item-footer mt-2">
+                          <a href="https://www.dropbox.com/scl/fi/fm2x16pwlom1517enip3a/Pagina-web.rar?rlkey=uwvfyt2cx8mfud7j7swxew7gi&st=logflw5k&dl=1" class="btn item-btn btn-descargar display-7" target="_blank">Descargar zip</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-</div>
- <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ad4eae2406134f569cbb24f4b1506c17"}'></script><!-- End Cloudflare Web Analytics -->
- <script src="jquery.min.js"></script>
- <script src="bootstrap.min.js"></script>
- <script src="nav-dropdown.js"></script>
- <script src="navbar-dropdown.js"></script>
-
-
-</body>
+        </section>
+ 
+        <!-- Cloudflare Web Analytics -->
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ad4eae2406134f569cbb24f4b1506c17"}'></script>
+        <!-- End Cloudflare Web Analytics -->
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="nav-dropdown.js"></script>
+        <script src="navbar-dropdown.js"></script>
+    </body>
 </html>

@@ -14,12 +14,35 @@ section {
   background: #fff no-repeat 50% 50%;
   background-size: cover
 }
+.pro-wrapper {
+  display: flex;
+  align-items: center
+}
+
+.pro-wrapper .fa-youtube {
+  font-size: 30px; /* Ajusta el tamaño del icono */
+  color: red; /* Cambia el color según lo desees */
+}
+.pro-wrapper .fa-telegram {
+  font-size: 30px; /* Ajusta el tamaño del icono */
+  color: #0088cc; /* Cambia el color según lo desees */
+}
+
+.contact-page .fa-brands {
+  font-size: 3rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
+ 
+}
+
 
 body {
   font-style: normal;
   line-height: 1.5;
   font-weight: 400;
-  color: #232323;
+ 
+  background-size: cover;
+  background-position: center;
   position: relative;
   font-family: "Google Sans";
   overflow-x: hidden;
@@ -458,6 +481,7 @@ ul {
     padding-left: 32px;
     padding-right: 32px
   }
+ 
 }
 
 .card-wrapper,
@@ -900,7 +924,14 @@ body {
   padding-bottom: 10rem;
   background-color: #202124
 }
-
+.projects-nada {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: transparent
+}
+.projects-nada .section-title {
+  color: #50d850
+} 
 .projects-page .btn:hover {
   background-color: #50d850 !important;
   border-color: #50d850 !important
@@ -1396,7 +1427,15 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  color: #50d850;
+  color: #0088cc;
+  font-size: 2rem
+}
+.social-row .socials .fa-brands {
+  transition: all .3s;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: red;
   font-size: 2rem
 }
 
