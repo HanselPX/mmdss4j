@@ -75,6 +75,29 @@ a:hover {
   padding: 10px 15px; /* Espaciado interno */
   text-align: center; /* Centra el texto */
 }
+.btn-VER {
+  background-color: #ff1e00; /* Color rojo */
+  color: #fff; /* Color del texto */
+  border: 1px solid transparent; /* Borde de 1px, transparente */
+  font-weight: 600; /* Peso de fuente */
+  font-style: normal; /* Estilo de fuente normal */
+  margin: .6rem; /* Margen */
+  white-space: normal; /* Espacio en blanco normal */
+  transition: all .2s ease-in-out; /* Transición suave */
+  display: inline-flex; /* Flexbox en línea */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  word-break: break-word; /* Permitir salto de palabras */
+  padding: .6rem 1.2rem; /* Espaciado interno */
+  border-radius: 25px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+#channel-info {
+  display: flex; /* Usa flexbox para alinear elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
 @keyframes rainbow {
   0% { color: blue; }
   14% { color: blue; }
