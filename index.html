@@ -27,9 +27,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preload" as="style" href="main-styles.css" />
     <link rel="stylesheet" href="main-styles.css" type="text/css" />
+    <style> 
+        body {
+            background-color: #232323;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0; 
+            padding: 20px;
+            background-image: url('assets/pcw2.jpg'); /* Imagen de fondo para PC */
+            background-size: cover;
+            background-position: center;
+        } 
+   
+        @media (max-width: 768px) {
+            body { 
+                background-image: url('assets/adw.jpg'); /* Imagen de fondo para móviles */
+            }
+        }
+      
+        .containerff,
+.containerff-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #00000000;
+    margin-right: auto; 
+    margin-left: auto
+}
+.index-page {
+  background-color: #20212400
+}
+ 
+        </style>
 </head>
 
-<body style="background-color: #232323">
+<body >
     <section class="menu navigation-bar">
         <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
             <div class="container-fluid">
@@ -56,7 +88,7 @@
                                 Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link text-primary display-4" href="ventas_adicionales.html">Ventas Adicionales</a>
+                            <a class="nav-link link text-primary display-4" href="internet.html">Internet</a>
                         </li>
                          <li class="nav-item">
                             <a class="nav-link link text-primary display-4" href="contenido.html">Contenido Tube</a>
@@ -78,7 +110,7 @@
     </section>
     <div class="animate">
         <section class="index-page index-fullscreen">
-            <div class="align-center container">
+            <div class="align-center containerff">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-12">
                         <img class="home-photo" src="assets/panda_icon.png" />
@@ -87,25 +119,7 @@
                             </strong>
                         </h1>
  
-                        <p class="typewriter normal-text white-text display-2">
-                            <span
-                                data-text="PandaStores | Proyectos VPN | Tutoriales | Android Studio"></span>
-                            <br /><br />
-                        </p>
-                        <div class="social-row">
-                           
-                        
-                            <div class="socials">
-                                <a href="https://www.youtube.com/@Panda_proyects" target="_blank">
-                                    <span class="fa-brands fa-youtube"></span>
-                                </a>
-                            </div>
-                            <div class="socials">
-                                <a href="https://t.me/iPANDAX" target="_blank">
-                                    <span class="iconfont icon-telegram"></span>
-                                </a>
-                            </div>
-                        </div>
+                    
                     </div>
                 </div>
             </div>
@@ -120,17 +134,7 @@
     <script src="nav-dropdown.js"></script>
     <script src="navbar-dropdown.js"></script>
 
-    <section class="footer">
-        <div class="container">
-            <div class="media-container-row align-center white-text">
-                <div class="col-12">
-                    <p class="normal-text font-0 display-7">
-                        Copyright © Panda  Todos los Derechos Reservados
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <script>
         var span = document.querySelector(".typewriter span");
         var textArr = span.getAttribute("data-text").split(" | ");
