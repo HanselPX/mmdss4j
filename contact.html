@@ -27,7 +27,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="main-styles.css" type="text/css">
 
-
+    <style> 
+        body {
+            background-color: #232323;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0; 
+            padding: 20px;
+            background-image: url('assets/pcw2.jpg'); /* Imagen de fondo para PC */
+            background-size: cover;
+            background-position: center;
+        } 
+   
+        @media (max-width: 768px) {
+            body { 
+                background-image: url('assets/adw.jpg'); /* Imagen de fondo para móviles */
+            }
+        }
+      
+        .containerff,
+.containerff-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #00000000;
+    margin-right: auto; 
+    margin-left: auto
+}
+.index-page {
+  background-color: #20212400
+}
+ 
+        </style>
 
 
 </head>
@@ -62,17 +93,9 @@
                                 Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link text-primary display-4" href="internet.html">Internet</a>
+                            <a class="nav-link link text-primary display-4" href="projects.html">Comprar</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link link text-primary display-4" href="contenido.html">Contenido Tube</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link text-primary display-4" href="projects.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link text-primary display-4" href="about.html">Informacion</a>
-                        </li>
+                    
                         <li class="nav-item">
                             <a class="nav-link link text-primary display-4" href="contact.html">Contacto</a>
                         </li>
@@ -175,7 +198,8 @@
             </div>
     </div>
     </section>
-    </div>
+</div>
+</section>
     <!-- Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
         data-cf-beacon='{"token": "ad4eae2406134f569cbb24f4b1506c17"}'></script><!-- End Cloudflare Web Analytics -->
@@ -183,20 +207,6 @@
     <script src="bootstrap.min.js"></script>
     <script src="nav-dropdown.js"></script>
     <script src="navbar-dropdown.js"></script>
-
-
-    <section class="footer">
-        <div class="container">
-            <div class="media-container-row align-center white-text">
-                <div class="col-12">
-                    <p class="normal-text font-0 display-7">
-                        Copyright © Panda  Todos los Derechos Reservados
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </section>
 </body>
 
 </html>

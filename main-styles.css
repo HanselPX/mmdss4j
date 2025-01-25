@@ -27,15 +27,32 @@ section {
   font-size: 30px; /* Ajusta el tamaño del icono */
   color: #0088cc; /* Cambia el color según lo desees */
 }
-
+.pro-wrapper .fa-cloud {
+  font-size: 30px; /* Ajusta el tamaño del icono */
+  color: #0088cc; /* Cambia el color según lo desees */
+}
+.pro-wrapper .arrow-right {
+  font-size: 90px; /* Ajusta el tamaño del icono */
+  color: #0088cc; /* Cambia el color según lo desees */
+}
 .contact-page .fa-brands {
   font-size: 3rem;
   padding-left: 1rem;
   padding-right: 3rem;
  
 }
-
-
+.contact-page .fa-solid {
+  font-size: 3rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
+ 
+}
+.contact-page .arrow-right {
+  font-size: 5rem;
+  padding-left: 100rem;
+  padding-right: 10rem;
+ 
+}
 body {
   font-style: normal;
   line-height: 1.5;
@@ -65,7 +82,7 @@ a {
 a,
 a:hover {
   text-decoration: none;
-  color: #50d850
+  color: #c9281d
 }
 .button-container {
   display: flex; /* Activa el modelo de caja flexible */
@@ -644,19 +661,19 @@ ul {
 .btn-primary:focus,
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #50d850 !important;
-  border-color: #40e456 !important;
+  background-color: #c9281d !important;
+  border-color: #c9281d !important;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2)
 }
 
 .text-primary {
-  color: #50d850 !important
+  color: #c9281d !important
 }
 
 a.text-primary.active,
 a.text-primary:focus,
 a.text-primary:hover {
-  color: #368f58 !important
+  color: #802d27 !important
 }
 
 a[class*=text-]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-caption) {
@@ -879,11 +896,11 @@ a[class*=text-]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-capti
 }
 
 .index-page .normal-text {
-  color: #50d850
+  color: #c9281d
 }
 
 .index-page .section-btn {
-  color: #50d850
+  color: #c9281d
 }
 
 .index-page .display-1 {
@@ -930,16 +947,16 @@ body {
   background-color: transparent
 }
 .projects-nada .section-title {
-  color: #50d850
+  color: #c9281d
 } 
 .projects-page .btn:hover {
-  background-color: #50d850 !important;
-  border-color: #50d850 !important
+  background-color: #c9281d !important;
+  border-color: #c9281d !important
 }
 
 .projects-page .btn-primary {
   font-weight: bold;
-  background-color: #50d850 !important;
+  background-color: #c9281d !important;
   color: #fff !important
 }
 
@@ -997,7 +1014,7 @@ body {
 }
 
 .projects-page .section-title {
-  color: #50d850
+  color: #c9281d
 }
 
 .projects-page .normal-text,
@@ -1008,7 +1025,7 @@ body {
  
 .projects-page .item-title {
   text-align: center;
-  color: #50d850
+  color: #c9281d
 } 
 .projects-page .item-sub {
   text-align: left;
@@ -1313,7 +1330,7 @@ body {
 }
 
 .gallery-page H3 {
-  color: #50d850
+  color: #c9281d
 }
 
 .gallery-page H4 {
@@ -1327,7 +1344,7 @@ body {
 }
 
 .about-page a:hover {
-  color: #41e332
+  color: #c9281d
 }
 
 .about-page .counter-container ol li:before {
@@ -1340,7 +1357,7 @@ body {
   transition: all .2s;
   color: #000;
   text-shadow: none !important;
-  background: #50d850;
+  background: #c9281d;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1366,7 +1383,7 @@ body {
 }
 
 .about-page .section-title {
-  color: #50d850;
+  color: #c9281d;
   text-align: center;
   font-weight: 700;
 }
@@ -1374,7 +1391,7 @@ body {
 .contact-page {
   padding-top: 9rem;
   padding-bottom: 7rem;
-  background-color: #202124
+  background-color: #0b46f500
 }
 
 .contact-page .image-wrapper {
@@ -1394,11 +1411,11 @@ body {
   font-size: 3rem;
   padding-left: 1rem;
   padding-right: 3rem;
-  color: #50d850
+  color: #c9281d
 }
 
 .contact-page .section-title {
-  color: #50d850
+  color: #c9281d
 }
 
 .contact-page .card-title {
@@ -1554,7 +1571,7 @@ body {
 .skills_icon,
 .skills_arrow {
   font-weight: bolder;
-  color: #8cee9c;
+  color: #c9281d;
 }
 
 .skills_title {
@@ -1698,12 +1715,12 @@ body {
 
 .typewriter span {
   padding: 10px;
-  border-right: solid #50d850 5px; 
+  border-right: solid #c9281d 5px; 
   animation: cursor 1s ease-in-out infinite;
 }
 
 @keyframes cursor {
-  from { border-color: #50d850; }
+  from { border-color: #c9281d; }
   to { border-color: transparent; }
 }
 
